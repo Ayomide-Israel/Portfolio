@@ -1,0 +1,60 @@
+
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex; /*this places the objects next to each other on a row*/
+    flex-direction: row; /*this defines the direction of flex of the objects, you can have colomn, row, and then reverse them.*/
+    flex-wrap: wrap-reverse; /*defines where the wrap starts how how the object wrap i.e. from the top or bottom (for reverse) then wrapping to the space left either top to bottom for normal wrap or bottom to top for wrap reverse*/
+    justify-content: space-between; /*this gives space to the objects in question, many option are here but we work with with the argument space-between which give eqaul spaciing to the objects, the bigger object takes more space*/
+}
+
+.header-main div {
+    height: 30px;
+}
+
+.header-main .div-1 {
+    width: 100px;
+    background-color: aqua;   
+}
+
+.header-main .div-2 {
+    width: 100px;
+    background-color: rgb(230, 0, 255);   
+}
+
+.header-main .div-3 {
+    width: 100px;
+    background-color: rgb(0, 255, 140);   
+}
+/* how to remove flicking when you hover on an image to change it to another image
+.body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: auto;
+    z-index: -1;
+    content: url(../img/starla\ _\ colour\ palette.jpeg);
+    
+}
+
+
+.image {
+    width: 300px;
+    height: 500px;
+    background-image: url(../img/Blue\ Winter\ Colour\ Palette\ {\ Shades\ Of\ Blue\ }.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+
+.image:hover {
+    background-image: url(../img/starla\ _\ colour\ palette.jpeg);
+}
+    ***/
+
+    
