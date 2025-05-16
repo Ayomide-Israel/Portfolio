@@ -91,6 +91,22 @@
       font-size: 0.9rem;
     }
 
+    .social-icons {
+      margin: 1rem 0;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1); /* white icons on dark background */
+      vertical-align: middle;
+    }
+
     @media (max-width: 768px) {
       .feature {
         max-width: 100%;
@@ -131,7 +147,20 @@
 
   <!-- Footer Section -->
   <footer>
-    <p>Contact us: info@technest.com | +123 456 7890 | @TechNest on social media</p>
+    <p>Contact us: info@technest.com | +234 901 234 5678</p>
+
+    <div class="social-icons">
+      <a href="https://x.com/" target="_blank" aria-label="X (Twitter)">
+        <img src="https://img.icons8.com/ios-filled/50/x.png" alt="X Icon" />
+      </a>
+      <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+        <img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram Icon" />
+      </a>
+      <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+        <img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook Icon" />
+      </a>
+    </div>
+
     <p>&copy; 2025 TechNest. All rights reserved.</p>
   </footer>
 </body>
