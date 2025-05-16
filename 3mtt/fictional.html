@@ -2,31 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechNest - Tech Consultancy Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechNest – Tech Consultancy</title>
   <style>
     :root {
-      --primary-color: #0a66c2;
-      --secondary-color: #f3f4f6;
-      --text-color: #333;
+      --primary: #0a66c2;
+      --bg-light: #f4f4f4;
+      --text-dark: #222;
+      --white: #fff;
     }
 
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text-color);
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-dark);
+      background-color: var(--white);
     }
 
     header {
-      background: var(--primary-color);
-      color: white;
-      padding: 3rem 1rem;
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 4rem 2rem;
       text-align: center;
     }
 
@@ -37,46 +38,46 @@
 
     header p {
       font-size: 1.2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
 
-    .cta-btn {
-      background: white;
-      color: var(--primary-color);
-      border: none;
+    .cta-button {
+      background-color: #ffffff;
+      color: var(--primary);
       padding: 0.75rem 1.5rem;
-      font-size: 1rem;
+      border: none;
       border-radius: 5px;
+      font-size: 1rem;
       cursor: pointer;
     }
 
     .features {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      background: var(--secondary-color);
-      padding: 2rem 1rem;
+      justify-content: space-between;
+      padding: 3rem 2rem;
+      background-color: var(--bg-light);
     }
 
     .feature {
-      background: white;
-      flex: 1 1 300px;
-      max-width: 30%;
-      margin: 1rem;
-      padding: 1.5rem;
+      flex: 1 1 30%;
+      background-color: #fff;
+      margin: 1rem 0.5rem;
+      padding: 2rem;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
       text-align: center;
     }
 
     .feature img {
-      width: 50px;
+      width: 40px;
+      height: 40px;
       margin-bottom: 1rem;
     }
 
     .feature h3 {
-      margin-bottom: 0.5rem;
       font-size: 1.2rem;
+      margin-bottom: 0.5rem;
     }
 
     .feature p {
@@ -84,11 +85,10 @@
     }
 
     footer {
-      background: #111;
-      color: white;
+      background-color: #111;
+      color: #fff;
       text-align: center;
-      padding: 1.5rem 1rem;
-      font-size: 0.9rem;
+      padding: 2rem 1rem;
     }
 
     .social-icons {
@@ -103,13 +103,13 @@
     .social-icons img {
       width: 24px;
       height: 24px;
-      filter: brightness(0) invert(1); /* white icons on dark background */
-      vertical-align: middle;
+      filter: brightness(0) invert(1);
     }
 
     @media (max-width: 768px) {
       .feature {
-        max-width: 100%;
+        flex: 1 1 100%;
+        margin: 1rem 0;
       }
 
       header h1 {
@@ -119,49 +119,43 @@
   </style>
 </head>
 <body>
+
   <!-- Hero Section -->
   <header>
-    <h1>TechNest Consultancy</h1>
-    <p>Your partner in digital transformation and innovative tech solutions.</p>
-    <button class="cta-btn">Get Started</button>
+    <h1>Welcome to TechNest</h1>
+    <p>Transforming businesses with innovative tech solutions.</p>
+    <button class="cta-button">Get Started</button>
   </header>
 
-  <!-- Features Section -->
+  <!-- Responsive Features Section -->
   <section class="features">
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/monitor.png" alt="Tech Strategy Icon" />
-      <h3>Tech Strategy</h3>
-      <p>Align your business goals with the right technologies through expert planning and roadmaps.</p>
+      <img src="https://img.icons8.com/ios-filled/50/code.png" alt="Development Icon">
+      <h3>Custom Software</h3>
+      <p>We build reliable, scalable solutions tailored to your business needs.</p>
     </div>
     <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/settings.png" alt="Custom Solutions Icon" />
-      <h3>Custom Solutions</h3>
-      <p>We design and build scalable, tailored software that addresses your unique business needs.</p>
-    </div>
-    <div class="feature">
-      <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Cloud Services Icon" />
+      <img src="https://img.icons8.com/ios-filled/50/cloud.png" alt="Cloud Icon">
       <h3>Cloud Integration</h3>
-      <p>Move to the cloud with confidence. We help you leverage cloud platforms for growth and efficiency.</p>
+      <p>Seamlessly migrate and manage your services in the cloud.</p>
+    </div>
+    <div class="feature">
+      <img src="https://img.icons8.com/ios-filled/50/combo-chart.png" alt="Strategy Icon">
+      <h3>Tech Strategy</h3>
+      <p>We help align your technology roadmap with your business goals.</p>
     </div>
   </section>
 
   <!-- Footer Section -->
   <footer>
     <p>Contact us: info@technest.com | +234 901 234 5678</p>
-
     <div class="social-icons">
-      <a href="https://x.com/" target="_blank" aria-label="X (Twitter)">
-        <img src="https://img.icons8.com/ios-filled/50/x.png" alt="X Icon" />
-      </a>
-      <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
-        <img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram Icon" />
-      </a>
-      <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
-        <img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook Icon" />
-      </a>
+      <a href="https://x.com" target="_blank" aria-label="X"><img src="https://img.icons8.com/ios-filled/50/x.png" alt="X"></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><img src="https://img.icons8.com/ios-filled/50/instagram-new.png" alt="Instagram"></a>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook"></a>
     </div>
-
     <p>&copy; 2025 TechNest. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
